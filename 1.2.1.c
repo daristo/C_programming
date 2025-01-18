@@ -9,6 +9,7 @@ main()
     upper = 50;  /* upper limit */
     step = 5;    /* step size */
     celsius = lower;
+    printf("Celsius Fahrenheit\n");
     while (celsius <= upper)
     {
         fahr = ((celsius * 9)/5) +32  ; /* обратната формула */
