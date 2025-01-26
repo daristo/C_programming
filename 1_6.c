@@ -3,21 +3,26 @@
 int main()
 {
     int c;
+    int d = getchar() != EOF;;
     c = getchar();
+    if (d == 0)
+    {
+        printf("EOF reached\n");
+        printf("%d\n", d);
+    }
     while (c != EOF)
     {
-        putchar(c);
         c = getchar();
-        int d = getchar() != EOF;
-        if(d == 1)
+        d = getchar() != EOF;
+        if (d == 1)
         {
-            printf("\n");
-            printf("%d\n",d);
+            // printf("\n");
+            printf("%d\n", d);
         }
         else
         {
             printf("EOF reached\n");
-            printf("%d\n",d);
+            printf("%d\n", d);
         }
     }
 }
