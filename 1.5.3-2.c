@@ -2,30 +2,13 @@
 /* replace blanks */
 int main(void)
 {
-    int c, nl;
+    int c, current, previous = 0;
     while ((c = getchar()) != EOF)
-        if (c == '\n')
-        {
-            c = ' ';
+    {
+        current = c == ' ' || c == '\t' || c == '\n';
+        if (!previous || !current) {
             putchar(c);
         }
-        else if (c == '\t')
-        {
-            c = ' ';
-            putchar(c);
-        }
-
-        else if (c == '\t')
-        {
-            c = ' ';
-            putchar(c);
-        }
-        else if (c == ' ')
-        {
-            putchar(c);
-        }
-        else
-        {
-            putchar(c);
-        }
+        previous = current;
+    }
 }
