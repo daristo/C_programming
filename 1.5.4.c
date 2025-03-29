@@ -14,14 +14,14 @@ int main(void)
 
         if (c == ' ' || c == '\n' || c == '\t')
         {
-            //printf("\n");
-            printf("Empty! ");
+            printf("\n");
+            //printf("Empty! ");
             
         }
         else
         {
-            printf("Not empty! ");
-            //putchar(c);
+            //printf("Not empty! ");
+            putchar(c);
         }
         previous = c;
     }
